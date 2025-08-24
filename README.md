@@ -1,4 +1,5 @@
 # ComfyUI-GGUF
+
 GGUF Quantization support for native ComfyUI models
 
 This is currently very much WIP. These custom nodes provide support for model files stored in the GGUF format popularized by [llama.cpp](https://github.com/ggerganov/llama.cpp).
@@ -16,13 +17,13 @@ Note: The "Force/Set CLIP Device" is **NOT** part of this node pack. Do not inst
 
 To install the custom node normally, git clone this repository into your custom nodes folder (`ComfyUI/custom_nodes`) and install the only dependency for inference (`pip install --upgrade gguf`)
 
-```
+```bash
 git clone https://github.com/city96/ComfyUI-GGUF
 ```
 
 To install the custom node on a standalone ComfyUI release, open a CMD inside the "ComfyUI_windows_portable" folder (where your `run_nvidia_gpu.bat` file is) and use the following commands:
 
-```
+```bash
 git clone https://github.com/city96/ComfyUI-GGUF ComfyUI/custom_nodes/ComfyUI-GGUF
 .\python_embeded\python.exe -s -m pip install -r .\ComfyUI\custom_nodes\ComfyUI-GGUF\requirements.txt
 ```
